@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import { useLocation } from "react-router-dom";
-import { logout_try, is_authenticated } from "../endpoints/Api";
-=======
 import { is_authenticated, logout }  from "../services/auth";
->>>>>>> 0c6ceee91f6b4b4b60c1c2afb015b53bc6ab3a10
 
 const Navbar = () => {
   const [userLogin, setUserLogin] = useState(false);
@@ -18,10 +13,6 @@ const Navbar = () => {
     };
     checkAuth();
   }, []);
-
-  const location = useLocation();
-  if (location.pathname === "/login") return null;
-  if (location.pathname === "/signup") return null;
 
   const handleLogout = async () => {
     const success = await logout_try();

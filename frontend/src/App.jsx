@@ -3,7 +3,7 @@ import Home from "./routes/Home";
 import Login from "./routes/Login";
 import Signup from "./routes/SignUp";
 import Chats from "./routes/Chats";
-import UserPage from "./routes/UserPage";
+import UserPage from "./routes/User-Page";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 

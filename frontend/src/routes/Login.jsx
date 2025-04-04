@@ -5,7 +5,7 @@ import { login_try } from "../endpoints/Api";
 // import { useAuth } from "../context/useAuth";
 
 // import {login_try} from "../endpoints/api";
-import "../App.css"
+//import "../App.css"
 
 
 const Login = () => {
@@ -90,7 +90,7 @@ const Login = () => {
               <span className="text-3xl font-bold text-white h-font">BLIXs</span>
             </div>
             <h2 className="text-5xl font-semibold mt-28 text-center text-white h-font">Welcome Page</h2>
-            <h3 className="text-2xl font-semibold text-center mt-4 text-white">sign in to <br/> continue access</h3>
+            <h3 className="text-2xl font-semibold text-center mt-40 text-white">sign in to <br/> continue access</h3>
           </div>
         </div>
       </div>
