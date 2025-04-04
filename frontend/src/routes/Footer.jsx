@@ -1,6 +1,12 @@
 import React from 'react';
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+
+  const location = useLocation();
+  if (location.pathname === "/login") return null;
+  if (location.pathname === "/signup") return null;
+
   return (
     <footer className="hidden md:flex fixed right-0 top-0 h-screen w-64 bg-gray-800 text-white flex-col justify-center items-center">
       <div className="container space-y-8">
