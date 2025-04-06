@@ -8,7 +8,7 @@ const Footer = () => {
   if (location.pathname === "/signup") return null;
 
   return (
-    <footer className="hidden md:flex fixed right-0 top-0 h-screen w-64 bg-gray-800 text-white flex-col justify-center items-center">
+    <footer className="hidden md:flex fixed right-0 top-0 h-screen w-84 bg-gray-800 text-white flex-col justify-center items-center">
       <div className="container space-y-8">
         {/* Company Info */}
         <div className="text-center">

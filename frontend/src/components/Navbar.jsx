@@ -27,17 +27,20 @@ const Navbar = () => {
   return (
     <div className="flex">
       {/* Sidebar for Desktop */}
-      <nav className="bg-gray-800 w-20 h-screen flex-col items-center py-4 fixed left-0 top-0 hidden md:flex">
-        <Link to="/" className="mb-6">
-          <img
-            className="h-8 w-8"
-            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-            alt="Logo"
-          />
+      <nav className="bg-gray-800 w-70 h-screen flex-col items-center py-4 fixed left-0 top-0 hidden md:flex">
+      <Link to="/" className="mb-6 flex items-center space-x-2 hover:opacity-80">
+        <img
+          className="h-8 w-8"
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+          alt="Logo"
+        />
+        <span className="text-xl font-bold text-white">BLIXs</span>
+      </Link>
+
+        <Link to="/" className="text-white my-4 hover:text-gray-400 flex items-center space-x-2">
+          <span>🏠</span>
+          <span>Home</span>
         </Link>
-
-        <Link to="/" className="text-white my-4 hover:text-gray-400">🏠</Link>
-
         {userLogin ? (
           <>
             <Link to="/user-page" className="text-white my-4 hover:text-gray-400">👤</Link>
@@ -45,8 +48,14 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <Link to="/login" className="text-white my-4 hover:text-gray-400">🔑</Link>
-            <Link to="/signup" className="text-white my-4 hover:text-gray-400">✍️</Link>
+          <Link to="/" className="text-white my-4 hover:text-gray-400 flex items-center space-x-2">
+          <span>🔑</span>
+          <span>Login</span>
+        </Link>
+        <Link to="/" className="text-white my-4 hover:text-gray-400 flex items-center space-x-2">
+          <span>✍️</span>
+          <span>Signup</span>
+        </Link>
           </>
         )}
       </nav>

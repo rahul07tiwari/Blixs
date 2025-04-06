@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
-import Signup from "./routes/SignUp";
+import Signup from "./routes/Signup";
+import Feed from "./components/Feed";
+
 import Chats from "./routes/Chats";
 import UserPage from "./routes/User-Page";
 import Navbar from "./components/Navbar";
@@ -17,7 +19,6 @@ const MainLayout = () => {
   );
 }
 
-
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/user" element={<UserPage />} />
+            <Route path="/feed" element={<Feed />} />
           </Route>
 
           <Route path="/login" element={<Login />} />
